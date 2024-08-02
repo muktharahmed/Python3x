@@ -1,0 +1,152 @@
+>>> def fibonacci():
+... a, b = 0, 1
+... while True:
+... yield b
+... a, b = b, a + b
+...
+>>> fib = fibonacci()
+>>> fib.next()
+1
+>>> fib.next()
+1
+>>> fib.next()
+
+
+>>> def psychologist():
+... print 'Please tell me your problems'
+... while True:
+... answer = (yield)
+... if answer is not None:
+... if answer.endswith('?'):
+... print ("Don't ask yourself
+... "too much questions")
+... elif 'good' in answer:
+... print "A that's good, go on"
+... elif 'bad' in answer:
+... print "Don't be so negative"
+...
+>>> free = psychologist()
+>>> free.next()
+Please tell me your problems
+>>> free.send('I feel bad')
+Don't be so negative
+>>> free.send("Why I shouldn't ?")
+Don't ask yourself too much questions
+>>> free.send("ok then i should find what is good for me")
+A that's good, go on
+
+>>> def my_generator():
+... try:
+... yield 'something'
+... except ValueError:
+... yield 'dealing with the exception'
+... finally:
+... print "ok let's clean"
+...
+>>> gen = my_generator()
+>>> gen.next()
+'something'
+>>> gen.throw(ValueError('mean mean mean'))
+'dealing with the exception'
+>>> gen.close()
+ok let's clean
+>>> gen.next()
+
+
+
+>>> iter = (x**2 for x in range(10) if x % 2 == 0)
+>>> for el in iter:
+... print el
+
+=========================================================================
+
+>>> from functools import reduce # Import in 3.0, not in 2.6
+>>> reduce((lambda x, y: x + y), [1, 2, 3, 4])
+10
+>>> reduce((lambda x, y: x * y), [1, 2, 3, 4])
+
+
+List Comprehension
+------------------
+>>> res = list(map(ord, 'spam'))
+
+>>> res = [ord(x) for x in 'spam'] # Apply expression to sequence
+
+>>> [x for x in range(5) if x % 2 == 0]
+
+When for clauses are nested within a list comprehension, they work like equivalent
+nested for loop statements. For example, the following:
+
+>>> res = [x + y for x in [0, 1, 2] for y in [100, 200, 300]]
+>>> res
+[100, 200, 300, 101, 201, 301, 102, 202, 302]
+
+
+>>> [(x, y) for x in range(5) if x % 2 == 0 for y in range(5) if y % 2 == 1]
+[(0, 1), (0, 3), (2, 1), (2, 3), (4, 1), (4, 3)]
+This expression permutes even numbers from 0 through 4 with odd numbers from 0
+through 4. The if clauses filter out items in each sequence iteration
+
+
+>>> M = [[1, 2, 3],
+... [4, 5, 6],
+... [7, 8, 9]]
+>>> N = [[2, 2, 2],
+... [3, 3, 3],
+... [4, 4, 4]]
+
+>>> [M[row][col] * N[row][col] for row in range(3) for col in range(3)]
+[2, 4, 6, 12, 15, 18, 28, 32, 36]
+>>> [[M[row][col] * N[row][col] for col in range(3)] for row in range(3)]
+[[2, 4, 6], [12, 15, 18], [28, 32, 36]]
+
+>>> [line.rstrip() for line in open('myfile')]
+
+Generator functions in action
+
+>>> def gensquares(N):
+...    for i in range(N):
+...        yield i ** 2 # Resume here later
+...
+
+>>> for i in gensquares(5): # Resume the function
+...     print(i, end=' : ') # Print last yielded value
+
+
+>>> x = gensquares(4)
+>>> x
+<generator object at 0x0086C378>
+
+>>> next(x) # Same as x.__next__() in 3.0
+0
+>>> next(x) # Use x.next() or next() in 2.6
+1
+>>> next(x)
+4
+>>> next(x)
+9
+>>> next(x)
+
+Generator Expressions
+>>> G = (c * 4 for c in 'SPAM') # Generator expression
+>>> list(G) # Force generator to produce all results
+
+
+>>> G = (c * 4 for c in 'SPAM')
+>>> I = iter(G) # Iterate manually
+>>> next(I)
+'SSSS'
+>>> next(I)
+
+Generators Are Single-Iterator Objects
+
+>>> G = (c * 4 for c in 'SPAM')
+>>> iter(G) is G # My iterator is myself: G has __next__
+True
+
+>>> {x: x * x for x in range(10)} # Dictionary comprehension, new in 3.0
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+>>> dict((x, x * x) for x in range(10))
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+

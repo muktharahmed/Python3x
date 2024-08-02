@@ -1,0 +1,39 @@
+Python Coding Test
+==================
+ * Create and work in a directory by name EMPID_PY_TEST
+
+Question-1
+~~~~~~~~~~
+Write a program to store ITEM details in a CSV file.
+
+The item details are as follows:
+	Item Code, Description, Price, QOH, Item Type, and
+	Reorder Status
+
+	QOH		-> Quantity on Hand
+	Item Type	-> is either F/S/N  
+		     F=>Fast Moving, S=>Slow Moving, N=>Non-moving
+	Reorder Status	=> Y or N
+
+Follow these Business Norms
+* Item Code and Description cannot be empty.
+* Price and QOH cannot be negiative
+* Item Type should hold only F or S or N
+* Reorder status shoulb be only  Y or N
+	
+Question-2
+~~~~~~~~~~
+Build a small app for the STORES MANAGER for the following options
+
+			Stores Manager
+			==============
+			1. Stock Value
+
+			2. Item Status
+
+			3. Reorder Report
+
+			4. Check QOH
+
+			5. Quit
+

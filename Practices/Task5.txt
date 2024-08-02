@@ -1,0 +1,36 @@
+Task
+====
+
+Classes & Objects
+~~~~~~~~~~~~~~~~~
+[1]
+Create a module by name 'Person' which will enable to instantiate
+object of 'Person' class with attributes like Name, Age & Gender.
+
+Write a driver program to instaniate Person object and check for
+the methods.
+
+[2]
+Create a module by name 'Point' which will enable us to instantiate
+'Point' object which will hold x_cord and y_cord details.
+
+Write a driver program to check the implementation of the 'Point'
+class
+
+[3]
+We know that an Employee is a Person.  Implement inheritence to 
+instantiate Employee objects which will have all the attributes
+and methods of the Person class.
+
+Write a driver program to check the same.
+
+[4]
+Enhance the Employee inherited implementation such that it 
+incorporates additional attribute(s) and method(s)
+
+[5]
+Create a module by name 'ThreeDPoint' which inherite the attributes
+and methods from the 'Point' class.
+
+It should help the user the in store the z-coordinate.
+

@@ -1,0 +1,98 @@
+Regular Expression
+
+1.
+Create a module by name "Validate" which will have function for validating
+the data that get accepted from stdin.
+
+	a) isInteger		
+	b) isFloat
+	c) isDate		Validate for a pattern 'DD-MM-YYYY' 
+				Care should be taken for validing the day, month and
+				year in case of leap year
+	d) isOctal
+	e) isHexaDeci
+	f) isEmailID		Validate syntatically for an email-id
+				Use special charcters in RegEx
+2.
+Using 'sub' which helps in "find and replace" perform the implemenation
+for a file.
+
+
+
+3. 
+Perform the Look Behind Assertion task demonstrated using a file.
+The program should read the contents from one, update (i.e. substitute)
+and write the same in anohter file.
+
+
+
+
+Standard Library 
+
+1.	Create a Operating System Interface with the following options
+
+		Operating System Options
+		--------------------------------
+		1. Clear Screen
+		2. Date
+		3. Time
+		4. Current Directory
+		5. Quit
+
+		Accept the user’s choice and perform appropriate operating system actions.
+
+2.	Accept absolute path from the user and find the following:
+
+			Path Manipulation
+			----------------------
+			1. Drive Name
+			2. Directory Name
+			3. File Name
+			4. Extension
+			5. Quit
+
+3.	Accept absolute path from the user and perform the following file test:
+ 
+
+		F I L E    T E S T
+		---------------------
+		1. Exists
+		2. Is Directory
+		3. Is File
+		4. Size If File
+		5. Quit
+
+4.	Use the file globing mechanism and display the size of all python regular file is the specified absolute path.
+
+5.	Use the sys module and find the following:
+
+		System  Information
+		------------------------
+		1. Version Number
+		2. Platform
+		3. Name of Executable
+		4. Quit
+
+6.	Use the string module and perform the following string operations for a given string:
+
+		String   Operations
+		----------------------
+		1. Find a Pattern
+		2. Count of Pattern
+		3. Find and Replace
+		4. Quit
+
+7.	Write a program to illustrate the use of “re” module.
+
+8.	Get the system date and display the date in the following formats:
+
+a)	ANSI  Format : yy/mm/dd
+b)	British Format : dd-mm-yyyy
+c)	American Format : mm-dd-yy
+d)	Long Format: DD-MMM-YYYY
+e)	Character Day of the Week
+
+9.	Accept the date of birth from the user and find the users age in years.
+
+
+

@@ -1,0 +1,66 @@
+Tasks
+=====
+Using List Comprehension technique do the following:
+
+1. Find the Fahrenheit of the following temperatures given in Celsius
+
+Celsius = [39.2, 36.5, 37.3, 37.8]
+
+Refer to the formula from the previous Task.
+
+2. Find Pythagorean triples for all the number in a range of 1 to N
+
+3. Cross product of two sets
+colours = [ "red", "green", "yellow", "blue" ]
+things = [ "house", "car", "tree" ]
+
+Tasks
+=====
+The following tasks are achieved in context to the facilitation done on
+Modules.
+
+1.	Create a module by name UDF, such that it holds all the user defined 
+functions ( Refer Q1. and Q6 of the previous Task )
+
+Write program which uses the UDF module and demonstrates
+the use of the user defined functions.
+
+2.	Create a module by name DefaultArgs, such that it holds all the user defined 
+Functions which have default argument ( Refer Q7. and Q8 of the previous Task )
+
+Write program which uses the DefaultArgs module and demonstrates
+the use of the user defined functions with default arguments.
+
+3.	Create a module by name KeyArgs, such that it holds all the user defined 
+Functions which have keyword argument mechanism ( Refer Q9. and Q10 of the previous Task )
+
+Write program which uses the KeyArgs module and demonstrates
+the use of the user defined functions with keyword arguments.
+
+4.	Create a module by name Recursion, such that it holds all the user defined 
+Recursive Functions ( Refer Q11. and Q14 of the previous Task )
+
+Write program which uses the Recursion module and demonstrates
+the use of recursive functions. 
+
+Give local name to the Recursion module function and execute them.
+
+5.	Import the UDF module using the from statement 
+
+		[a] with specific user defined function
+		[b] with all user-defined function using “ * “
+
+6.	If the modules are not being identified, we need to set the module search path.  Are your modules being executed if they are placed in a different directory, if no perform appropriate action such that they start working?
+
+7.	Using the standard module “sys” change the primary and second prompts of the Python environment.
+
+8.	Observe the different objects of the __builtins__ module.
+
+9.	Create a package, such that we are in a position to use all our function created in the previous session as follows:
+
+		MyFunctions
+		MyFunctions.UDF
+		MyFunctions.DefaultArgs
+		MyFunctions.KeyArgs
+		MyFunctions.Recursion
+

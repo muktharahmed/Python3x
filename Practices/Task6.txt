@@ -1,0 +1,66 @@
+Exception Handling
+
+1.	Execute those programs which you have created earlier. 
+	Enter some text when a number is asked. Record your observation.
+
+2.	Use appropriate exception handling method such that the user enters 
+	only the required data.
+
+
+3.	Execute the program which was checking for file size and record your observation for the following:
+ 
+	[a] The specified file does not exist
+	[b] You have no read permission 
+	[c] It is not an ordinary text file
+
+	Use exception handling mechanism and overcome the above expected error(s).
+
+4.	Write a program which accepts the day, month and year and stores them as the first 
+	three elements of a list.
+
+	[a] Raise an “Invalid Month” exception when the month is not between 1 to 12
+	[b] Raise an “Invalid Day” exception when the day is not between 1 to the max day in that month. 
+	[c] The year should be a FOUR digit integer and as per EPOC it should be 1900 and above.
+	    otherwise raise an "Invalid Year" exception
+
+5.	Write a program to illustrate the finally clause of the try...expect statement.
+
+6.	Modify all other programs which you have created in your previous practice sessions to 
+	handle expected exceptions.
+
+
+
+Classes & Objects
+
+1.	Create a class by name “Person” who’s object hold the following information
+
+		The Name, Gender and Age of the person
+		Gender is either “M” or “F”. 
+		Age should be between 1 and 99 only
+
+	Write appropriate methods to initialize the object, display the objects data.
+
+2.	Create a class by name “Date” who’s objects hold the day, month and the year.
+
+	Write appropriate methods to perform the following:
+		[a] Initialize the date object
+		[b] Display the date in dd/mm/yyyy  i.e. British Format
+		[c] Display the date in mm/dd/yyyy  i.e. American Format
+		[d] Return only the day, the month or the year
+		[e] Display the date in dd-mon-yyyy format.  Where mon represents Jan, Feb..
+		[d] Display the date in long format. 12, January 2004
+
+	Ensure that the date object holds a valid date.  Otherwise display appropriate error message.
+
+3.	Write a program to illustrate Class Variables.
+
+4.	Use the special method __del__ with the “Person” and the “Date” class and record your observation.
+
+5.	Write a program to illustrate Inheritance.
+
+6.	Create a class by name “Employee” which inherits the “Person” class attributes and methods, besides adds additional attributes like designation, and salary.
+
+7.	Write a program to illustrate multiple inheritance.
+
+8.	Perform the isinstance( ) and issubclass( ) tests on the Employee and Person objects.
+

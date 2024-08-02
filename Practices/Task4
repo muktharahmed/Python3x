@@ -1,0 +1,48 @@
+Task-4
+======
+
+2.
+Write a program to store ITEM details in a csv file.
+The item details are as follows:
+	Item Code, Description, Price, QOH, Item Type, Reorder Status
+
+	QOH -> Quantity on Hand
+	Item Type -> is either F/S/N  
+		     F=>Fast Moving, S=>Slow Moving, N=>Non-moving
+	Reorder Status => Y or N
+
+	Business Norms
+	1) Item Code and Description cannot be empty.
+	2) Price and QOH cannot be negiative
+	3) Item Type should hold only F or S or N
+	
+3.
+Build a small app for the STORES MANAGER for the following options
+
+			Stores Manager
+			==============
+			1. Stock Value
+
+			2. Item Status
+
+			3. Reorder Report
+
+			4. Check QOH
+
+			5. Quit
+4.
+Simulate the following UNIX command with programs
+   a) The 'head' command
+   b) The 'wc' command
+
+5.  Build a untility by name 'wf' which is an abbrevation
+    for 'Word Frequency' 
+
+
+
+
+
+
+
+
+

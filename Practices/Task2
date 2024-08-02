@@ -1,0 +1,112 @@
+
+Task2
+=====
+
+1.	Write user-defined function for the following
+
+	To display a message 
+
+	“Welcome to BANGALORE”
+ 	“Have a nice day!”
+
+2.	Write a function which finds the cubes of numbers from 1 to 5.
+
+3.	Write a function to do the following tasks
+
+	[a] Check if the year passed as an argument is a leap year 
+		or not.  
+	[b] Check if the integer passed as an argument is Prime 
+		or not.
+      Return a Boolean value.
+
+4.	Write a function to determine the roots of a quadratic 
+		equation.
+
+5.	Write a function which returns a tuple of the indices of 
+	the two smallest values in list.
+
+6.	Write a function to check the given character is:
+
+	[a] A upper case letter,
+	[b] A lower case letter,
+	[c] A digit or
+	[d] A special symbol
+
+7.	Write a function with default argument value to compute 
+	simple interest. The default rate of interest is 10% 
+	otherwise the user specifies it.
+
+8.	Write a function with default arguments to print the 
+	specified character, the specified number of times.
+
+	The default character is “ * “ and the default number is 40
+
+	We should be able to call the function in the following
+	ways:
+
+	PrintChar()
+	PrintChar('=')
+	PrintChar('#', 30)
+
+
+9.	Write a function which takes two argument, the first being 
+	the temperature and the second being the character to 
+	indicate whether the temperature is in Fahrenheit ( F ) 
+	or Celsius ( C ).
+
+	If the temperature is in Fahrenheit, the function should 
+	calculate and return the Celsius equivalent and vice-versa.
+
+	*Celsius = ( 5.0 / 9.0 ) * ( Fahrenheit – 32.0 )
+	*Fahrenheit = (( 9.0 / 5.0 ) * Celsius ) + 32.0
+
+	Use the keyword argument mechanism to implement the function.
+
+10.	Write a function which takes three argument, the first being 
+	the title, the second being the name and the third being the 
+	message.
+
+	Message(title, name, msg)
+
+	Use the keyword argument mechanism and display the informatio
+	with the following print function:    
+
+	print( “%s %s \n %s”  % (title, name, msg))
+
+11.	Write a recursive function to find the factorial of a number.
+
+	[a] Check if the function is working properly or not.
+	[b] Find the Binomial co-efficient   nCr = n! / (n – r )! * r!
+
+12.	Write a recursive function to find the GCD of two positive 
+	numbers.
+
+	[a] Using the above function find the 
+		LCM = ( m * n ) / GCD(m, n)
+
+13.	Write a recursive function to get the Nth Fibonacci number.
+
+14.	Write a recursive function to solve the problem of 
+	Tower of Hanoi.
+
+15.	Using the variable argument list mechanism write a function 
+	which returns the sum of all the integers passed to it as 
+	arguments.
+
+16.	Write Python program to illustrate the different type of 
+	scopes for a variable and the usage of global statement.
+
+17.	Modify the Tower of Hanoi recursive function such that 
+	function also gives a count of the number of disk moves.  
+	The count is held in a global variable.
+
+18.	Demonstrate the use of anonymous function using lambda.
+
+	[a] To find the area of a right angle triangle
+	[b] To find the volume of a box.
+	[c] To convert inches to centimeters.
+
+19.	Provide document strings for all the above user-defined 
+	functions with text indicating their usage.
+ 
+
